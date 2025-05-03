@@ -1,0 +1,42 @@
+{
+  "name": "@compomint/router",
+  "version": "0.1.0",
+  "main": "dist/compomint-route.js",
+  "module": "dist/compomint-route.esm.js",
+  "types": "dist/compomint-route.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/compomint-route.d.ts",
+      "import": "./dist/compomint.esm-route.js",
+      "require": "./dist/compomint-route.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build:prod": "cross-env NODE_ENV=production rollup -c",
+    "prepare": "npm run build:prod",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurukona/compomint-route.git"
+  },
+  "author": "CHOI SUNGHO <wadolsh@gmail.com>",
+  "homepage": "https://compomint.dev",
+  "license": "MIT",
+  "description": "Lightweight and reactive router for CompoMint-powered SPAs.",
+  "keywords": [
+    "router",
+    "spa",
+    "compomint",
+    "frontend",
+    "navigation",
+    "javascript"
+  ]
+}
